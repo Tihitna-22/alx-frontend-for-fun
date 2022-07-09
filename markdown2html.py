@@ -6,6 +6,7 @@ import sys
 import os
 import markdown
 
+
 if __name__ == '__main__':
     """ this function takes two arguments markdown and htmlfile"""
     if(len(sys.argv) < 3):
@@ -23,3 +24,14 @@ if __name__ == '__main__':
 
     with open(sys.argv[2], 'w') as f:
         f.write(html)
+
+
+
+
+    with open(sys.argv[1], 'r') as f:
+        text = f.read()
+        html = markdown.markdown(text)
+
+    with open(sys.argv[2], 'w') as f:
+        f.write(html)
+
