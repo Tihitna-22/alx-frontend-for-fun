@@ -13,7 +13,6 @@
 
 body {
   @include body-list;
-  
+}
   div {
     @include div-list; }
-  }
