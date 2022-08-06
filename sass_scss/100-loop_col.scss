@@ -3,9 +3,9 @@
 // col-3 with width equals to 33.3333333333%
 // col-4 with width equals to 25%
 // You must create .col-* class from 1 to 4
-@use "sass:math";
+
 
 @for $i from 1 through 4 {
     .col-#{$i} {
-        width: math.div(100%, $i); }
+        width: (100% / $i); }
     }
